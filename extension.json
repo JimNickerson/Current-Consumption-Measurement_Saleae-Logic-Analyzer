@@ -11,7 +11,7 @@
       "metrics": {
         "Vdrop": {
           "name": "Vdrop",
-          "notation": "V<sub>drop</sub>(V<sub>max</sub>-Vavg)",
+          "notation": "V<sub>drop</sub>",
           "units": "v"
         },
         "Iavg": {
