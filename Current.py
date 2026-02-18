@@ -20,14 +20,14 @@ class Current(AnalogMeasurer):
         self.batches.append(data.samples)
 
     """
-    Calculates Average Voltage and Divide by 5.6 Ohm Resistor.
+    Calculates Average Voltage and Divide by 0.1 Ohm Resistor.
     """  
     def measure(self):
         data = np.concatenate(self.batches)
         averageVoltage = np.mean(data)
-        averageCurrent = averageVoltage / 18
+        averageCurrent = averageVoltage / 0.1
         maxVoltage = np.amax(data)
-        maxCurrent = maxVoltage / 18
+        maxCurrent = maxVoltage / 0.1
         return {"Iavg" : round(averageCurrent,6),
                 "Vavg": round(averageVoltage,6),
                 "Vmax" : round(maxVoltage,6),
