@@ -30,7 +30,8 @@ class Current(AnalogMeasurer):
         averageCurrent = voltageDrop / 0.1
         
         maxCurrent = maxVoltage / 0.1
-        return {"Iavg" : round(averageCurrent,6),
+        return {"Vdrop" : round(voltageDrop,6),
+                "Iavg" : round(averageCurrent,6),
                 "Vavg": round(averageVoltage,6),
                 "Vmax" : round(maxVoltage,6),
                 "Imax" : round(maxCurrent,6)}
