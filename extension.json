@@ -9,6 +9,11 @@
       "type": "AnalogMeasurement",
       "entryPoint": "Current.Current",
       "metrics": {
+        "Vdrop": {
+          "name": "Vdrop",
+          "notation": "V<sub>drop</sub>(V<sub>max</sub>-Vavg)",
+          "units": "v"
+        },
         "Iavg": {
           "name": "Current",
           "notation": "I<sub>avg</sub>(V<sub>avg</sub>/0.1)",
