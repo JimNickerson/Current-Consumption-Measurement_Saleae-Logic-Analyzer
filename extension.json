@@ -11,12 +11,12 @@
       "metrics": {
         "Vdrop": {
           "name": "Vdrop",
-          "notation": "V<sub>drop</sub>",
+          "notation": "V<sub>drop</sub> 0.1ohm",
           "units": "v"
         },
         "Iavg": {
           "name": "Current",
-          "notation": "I<sub>avg</sub>(V<sub>avg</sub>/0.1)",
+          "notation": "I<sub>avg</sub>",
           "units": "A"
         },
         "Vavg": {
@@ -26,7 +26,7 @@
         },
         "Imax": {
           "name": "Current",
-          "notation": "I<sub>max</sub>(V<sub>max</sub>/0.1)",
+          "notation": "I<sub>max</sub>",
           "units": "A"
         },
         "Vmax": {
