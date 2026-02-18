@@ -33,6 +33,11 @@
           "name": "Voltage",
           "notation": "V<sub>max</sub>",
           "units": "V"
+        },
+        "Vmin": {
+          "name": "Voltage",
+          "notation": "V<sub>min</sub>",
+          "units": "V"
         }
       }
     }
