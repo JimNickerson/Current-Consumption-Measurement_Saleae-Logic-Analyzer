@@ -28,7 +28,7 @@ class Current(AnalogMeasurer):
         minVoltage = np.amin(data)
         averageVoltage = np.mean(data)
         voltageDrop = maxVoltage - minVoltage
-        averageCurrent = (averageVoltage - voltageDrop) / 0.1
+        averageCurrent = voltageDrop / 0.1
         maxCurrent = (maxVoltage - minVoltage) / 0.1
         return {"Vdrop" : round(voltageDrop,6),
                 "Iavg" : round(averageCurrent,6),
