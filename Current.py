@@ -20,16 +20,16 @@ class Current(AnalogMeasurer):
         self.batches.append(data.samples)
 
     """
-    Calculates Average Voltage and Divide by 0.1 Ohm Resistor.
+    Calculates the voltage drop Max - Average Divide by 0.1 ohm R
     """  
     def measure(self):
         data = np.concatenate(self.batches)
         maxVoltage = np.amax(data)
+        minVoltage = np.amin(data)
         averageVoltage = np.mean(data)
-        voltageDrop = maxVoltage - averageVoltage
-        averageCurrent = voltageDrop / 0.1
-        
-        maxCurrent = maxVoltage / 0.1
+        voltageDrop = maxVoltage - minVoltage
+        averageCurrent = (averageVoltage - voltageDrop) / 0.1
+        maxCurrent = (maxVoltage - minVoltage) / 0.1
         return {"Vdrop" : round(voltageDrop,6),
                 "Iavg" : round(averageCurrent,6),
                 "Vavg": round(averageVoltage,6),
