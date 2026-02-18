@@ -34,6 +34,6 @@ class Current(AnalogMeasurer):
                 "Iavg" : round(averageCurrent,6),
                 "Vavg": round(averageVoltage,6),
                 "Vmax" : round(maxVoltage,6),
-                "Vmin: : round(minVoltage,6),
+                "Vmin": : round(minVoltage,6),
                 "Imax" : round(maxCurrent,6)}
         
